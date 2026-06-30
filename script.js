@@ -73,3 +73,20 @@ function animate() {
 }
 
 animate();
+const music = document.getElementById("music");
+const toggle = document.getElementById("music-toggle");
+
+let isPlaying = false;
+
+toggle.addEventListener("click", () => {
+    if (isPlaying) {
+        music.pause();
+        music.currentTime = 0;
+        toggle.classList.remove("active");
+    } else {
+        music.play();
+        toggle.classList.add("active");
+    }
+
+    isPlaying = !isPlaying;
+});
