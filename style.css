@@ -1,0 +1,41 @@
+body{
+margin:0;
+background:#000;
+color:white;
+font-family:Arial,sans-serif;
+text-align:center;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.logo{
+width:250px;
+filter:drop-shadow(0 0 20px red);
+}
+
+h1{
+color:#ff0000;
+font-size:60px;
+text-shadow:0 0 20px red;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#ff0000;
+color:white;
+text-decoration:none;
+border-radius:40px;
+transition:.3s;
+}
+
+.button:hover{
+box-shadow:0 0 20px red;
+}
