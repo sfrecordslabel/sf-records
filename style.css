@@ -1,41 +1,125 @@
-body{
+*{
 margin:0;
-background:#000;
-color:white;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-text-align:center;
+scroll-behavior:smooth;
 }
 
-header{
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff0000;
+}
+
+.hero{
 height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+text-align:center;
+background:radial-gradient(circle,#1a0000,#000);
 }
 
-.logo{
-width:250px;
-filter:drop-shadow(0 0 20px red);
-}
-
-h1{
+.hero h1{
+font-size:70px;
 color:#ff0000;
-font-size:60px;
-text-shadow:0 0 20px red;
+text-shadow:0 0 30px red;
+animation:glow 2s infinite alternate;
 }
 
-.button{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
+.hero p{
+margin-top:20px;
+font-size:22px;
+letter-spacing:2px;
+}
+
+.btn{
+margin-top:40px;
+padding:18px 45px;
 background:#ff0000;
 color:white;
 text-decoration:none;
-border-radius:40px;
+border-radius:50px;
+font-weight:bold;
 transition:.3s;
+box-shadow:0 0 25px red;
 }
 
-.button:hover{
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 50px red;
+}
+
+.demo{
+padding:120px 20px;
+text-align:center;
+}
+
+.demo form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.demo input,
+.demo textarea{
+padding:18px;
+background:#111;
+border:1px solid #ff0000;
+color:white;
+border-radius:10px;
+}
+
+.demo button{
+padding:18px;
+background:#ff0000;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
 box-shadow:0 0 20px red;
+}
+
+footer{
+padding:70px 20px;
+text-align:center;
+background:#080808;
+}
+
+@keyframes glow{
+from{
+text-shadow:0 0 10px red;
+}
+to{
+text-shadow:0 0 40px red;
+}
 }
