@@ -341,3 +341,39 @@ border-radius:20px;
 ::-webkit-scrollbar-track{
 background:#111;
 }
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(14px);
+z-index:999;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+color:#ff2b2b;
+text-shadow:0 0 20px red;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#ff2b2b;
+text-shadow:0 0 10px red;
+}
