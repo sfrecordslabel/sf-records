@@ -6,21 +6,24 @@
 <title>SF Records</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<div id="loader">
+    <h1>SF</h1>
+</div>
+
 <nav class="navbar">
     <div class="logo">SF RECORDS</div>
 
     <div class="nav-links">
-        <a href="#">HOME</a>
+        <a href="#home">HOME</a>
         <a href="#demo">SEND DEMO</a>
         <a href="#contact">CONTACT</a>
     </div>
 </nav>
-<div id="loader">
-  <h1>SF</h1>
-</div>
 
-<header class="hero">
+<section class="hero" id="home">
 
 <div class="bg"></div>
 
@@ -30,9 +33,11 @@
 
 <p>THE NEXT GENERATION OF SOUND</p>
 
-<a href="#demo" class="button">SEND DEMO</a>
+<a href="#demo" class="button">
+SEND DEMO
+</a>
 
-</header>
+</section>
 
 <section id="demo">
 
@@ -40,53 +45,76 @@
 
 <form action="https://formsubmit.co/sfrecorddss@gmail.com" method="POST">
 
-<input type="text" placeholder="Artist Name" name="name" required>
+<input
+type="text"
+name="name"
+placeholder="Artist Name"
+required>
 
-<input type="email" placeholder="Email" name="email" required>
+<input
+type="email"
+name="email"
+placeholder="Email"
+required>
 
-<input type="url" placeholder="Demo Link" name="demo" required>
+<input
+type="url"
+name="demo"
+placeholder="Demo Link"
+required>
 
-<textarea placeholder="Message" name="message"></textarea>
+<textarea
+name="message"
+placeholder="Message">
+</textarea>
 
-<button>SEND DEMO</button>
+<button type="submit">
+SEND DEMO
+</button>
 
 </form>
 
 </section>
 
-<foot>
-
-<p>Instagram</p>
-
-<b>@sf_recordss</b>
-
-<br><br>
-
-<p>Email</p>
-
-<b>sfrecorddss@gmail.com</b>
-
 <footer id="contact">
 
-<script src="script.js"></script>
+<h3>CONTACT</h3>
 
-<button id="music-toggle" aria-label="Toggle music">
+<p>@sf_recordss</p>
+
+<p>sfrecorddss@gmail.com</p>
+
+</footer>
+
+<button id="music-toggle">
+
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-<path d="M5 9V15H9L14 20V4L9 9H5Z"
+
+<path
+d="M5 9V15H9L14 20V4L9 9H5Z"
 fill="white"/>
-<path d="M17 9C18.5 10.2 18.5 13.8 17 15"
+
+<path
+d="M17 9C18.5 10.2 18.5 13.8 17 15"
 stroke="white"
 stroke-width="2"
 stroke-linecap="round"/>
-<path d="M19.5 6.5C22 9 22 15 19.5 17.5"
+
+<path
+d="M19.5 6.5C22 9 22 15 19.5 17.5"
 stroke="white"
 stroke-width="2"
 stroke-linecap="round"/>
+
 </svg>
+
 </button>
 
 <audio id="music" loop>
 <source src="music.mp3" type="audio/mpeg">
-</audio></body>
+</audio>
+
+<script src="script.js"></script>
+
+</body>
 </html>
- 
