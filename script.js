@@ -90,3 +90,21 @@ toggle.addEventListener("click", () => {
 
     isPlaying = !isPlaying;
 });
+const intro = new Audio("intro.mp3");
+const click = new Audio("click.mp3");
+
+intro.volume = 0.6;
+click.volume = 0.4;
+
+// Интро (браузер может потребовать первое касание)
+window.addEventListener("click", () => {
+    intro.play().catch(() => {});
+}, { once: true });
+
+// Звук клика
+document.querySelectorAll("button, a").forEach(el => {
+    el.addEventListener("click", () => {
+        click.currentTime = 0;
+        click.play();
+    });
+});
