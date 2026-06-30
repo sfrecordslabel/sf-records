@@ -265,4 +265,79 @@ footer{
 
 border-top:1px solid rgba(255,0,0,.3);
 
+}/* Glass Effect */
+
+#demo form{
+background:rgba(255,255,255,.04);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,0,0,.25);
+padding:35px;
+border-radius:25px;
+box-shadow:0 0 40px rgba(255,0,0,.15);
+}
+
+#demo form:hover{
+box-shadow:0 0 60px rgba(255,0,0,.35);
+transition:.4s;
+}
+
+input,
+textarea{
+transition:.3s;
+}
+
+input:hover,
+textarea:hover{
+border-color:#ff3b3b;
+}
+
+.hero{
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:700px;
+height:700px;
+background:radial-gradient(circle,rgba(255,0,0,.18),transparent 70%);
+top:-250px;
+left:50%;
+transform:translateX(-50%);
+animation:pulseBg 5s ease-in-out infinite;
+}
+
+@keyframes pulseBg{
+0%,100%{
+transform:translateX(-50%) scale(1);
+}
+50%{
+transform:translateX(-50%) scale(1.3);
+}
+}
+
+.button{
+letter-spacing:2px;
+font-size:18px;
+}
+
+.button:hover{
+transform:translateY(-4px) scale(1.05);
+}
+
+footer b{
+color:#ff3b3b;
+}
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#ff0000;
+border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+background:#111;
 }
