@@ -1,4 +1,31 @@
-*{
+#music-toggle{
+position:fixed;
+right:18px;
+bottom:18px;
+width:48px;
+height:48px;
+border:none;
+border-radius:50%;
+background:rgba(20,20,20,.65);
+backdrop-filter:blur(12px);
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 0 20px rgba(255,0,0,.25);
+z-index:9999;
+}
+
+#music-toggle:hover{
+transform:scale(1.08);
+box-shadow:0 0 30px rgba(255,0,0,.8);
+}
+
+#music-toggle.active{
+background:#ff1a1a;
+box-shadow:0 0 35px red;
+}*{
 margin:0;
 padding:0;
 box-sizing:border-box;
