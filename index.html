@@ -8,94 +8,85 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-<header>
+<nav>
+<div class="nav-logo">SF RECORDS</div>
 
-<img src="Nowy_projekt-23.png" class=".logo{
-    width:260px;
-    animation:
-        float 4s ease-in-out infinite,
-        glow 2s ease-in-out infinite alternate,
-        pulse 2.5s ease-in-out infinite;
-    filter:drop-shadow(0 0 10px #ff0000);
-    transition:0.4s;
-    cursor:pointer;
-}
+<div class="nav-links">
+<a href="#home">HOME</a>
+<a href="#demo">SEND DEMO</a>
+<a href="#contact">CONTACT</a>
+</div>
+</nav>
 
-.logo:hover{
-    transform:scale(1.08) rotate(2deg);
-    filter:
-        drop-shadow(0 0 20px #ff0000)
-        drop-shadow(0 0 40px #ff0000)
-        drop-shadow(0 0 80px #ff0000);
-}
-
-@keyframes glow{
-    0%{
-        filter:
-        drop-shadow(0 0 10px #ff0000)
-        drop-shadow(0 0 20px #ff0000);
-    }
-
-    100%{
-        filter:
-        drop-shadow(0 0 30px #ff0000)
-        drop-shadow(0 0 60px #ff0000)
-        drop-shadow(0 0 100px #ff0000);
-    }
-}
-
-@keyframes float{
-    0%,100%{
-        transform:translateY(0px);
-    }
-
-    50%{
-        transform:translateY(-12px);
-    }
-}
-
-@keyframes pulse{
-    0%,100%{
-        transform:scale(1);
-    }
-
-    50%{
-        transform:scale(1.04);
-    }
-}">
+<section id="home" class="hero">
 
 <h1>SF RECORDS</h1>
 
 <p>THE NEXT GENERATION OF SOUND</p>
 
-<div class="buttons">
-<a href="#releases">LISTEN</a>
-<a href="#demo">SEND DEMO</a>
-</div>
-
-</header>
-
-<section id="about">
-
-<h2>ABOUT</h2>
-
-<p>
-SF Records is an independent music label focused on discovering new talent and creating the next generation of sound.
-</p>
+<a href="#demo" class="btn">
+SEND DEMO
+</a>
 
 </section>
 
-<section id="contact">
+<section id="demo" class="demo">
 
-<h2>CONTACT</h2>
+<h2>SEND DEMO</h2>
 
-<p>Email: sfrecorddss@gmail.com</p>
+<form action="https://formsubmit.co/sfrecorddss@gmail.com" method="POST">
 
-<p>Instagram: @sf_recordss</p>
+<input
+type="text"
+name="name"
+placeholder="Artist Name"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Email"
+required>
+
+<input
+type="url"
+name="demo"
+placeholder="Demo Link"
+required>
+
+<textarea
+name="message"
+placeholder="Tell us about yourself...">
+</textarea>
+
+<button type="submit">
+SEND DEMO
+</button>
+
+</form>
 
 </section>
+
+<footer id="contact">
+
+<h3>CONTACT</h3>
+
+<p>Instagram</p>
+
+<b>@sf_recordss</b>
+
+<br><br>
+
+<p>Email</p>
+
+<b>sfrecorddss@gmail.com</b>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
